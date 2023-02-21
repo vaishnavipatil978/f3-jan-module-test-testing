@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="white-container">
+
+    <h1>
+        TimeZone API
+    <h1>
+
+    <h1>
+        Your Current Time Zone
+    </h1>
+
+
+    <div class="timeContainer">
+       <div class="containers zoneName">
+        <span>Name Of Time Zone:</span>
+        <span id="userZoneName"></span>
+       </div>
+
+       <div class="containers lat">
+        <span>Lat:</span>
+        <span id="userLat"></span>
+       </div>
+
+       <div class="containers long">
+        <span>Long:</span>
+        <span id="userLong"></span>
+       </div>
+
+       <div class="containers STD">
+        <span>Offset STD:</span>
+        <span id="userSTD"></span>
+       </div>
+
+       <div class="containers STDSeconds">
+        <span>Offset STD Seconds:</span>
+        <span id="userSTDSeconds"></span>
+       </div>
+
+       <div class="containers DST">
+        <span>Offset DST:</span>
+        <span id="userDST"></span>
+       </div>
+
+       <div class="containers DSTSeconds">
+        <span>Offset DST Seconds:</span>
+        <span id="userDSTSeconds"></span>
+       </div>
+
+       <div class="containers country">
+        <span>Country:</span>
+        <span id="userCountry"></span>
+       </div>
+
+       <div class="containers postcode">
+        <span>Postcode:</span>
+        <span id="userPostCode"></span>
+       </div>
+
+       <div class="containers city">
+        <span>City:</span>
+        <span id="userCity"></span>
+       </div>
+
+    </div>
+
+    </div>
+
+    <div class="black-container">
+        <h1>Enter Address</h1>
+
+        <input type="text" placeholder="Addresss" id="address" value="">
+        <button type="submit" onclick="getResultLocation()">Submit</button>
+
+        <div id="error-container"></div>
+
+        <div id="result-container">
+            <h1>
+                Your result
+            </h1>
+            <div class="timeContainer">
+                <div class="containers zoneName">
+                 <span>Name Of Time Zone:</span>
+                 <span id="resultZoneName"></span>
+                </div>
+         
+                <div class="containers lat">
+                 <span>Lat:</span>
+                 <span id="resultLat"></span>
+                </div>
+         
+                <div class="containers long">
+                 <span>Long:</span>
+                 <span id="resultLong"></span>
+                </div>
+         
+                <div class="containers STD">
+                 <span>Offset STD:</span>
+                 <span id="resultSTD"></span>
+                </div>
+         
+                <div class="containers STDSeconds">
+                 <span>Offset STD Seconds:</span>
+                 <span id="resultSTDSeconds"></span>
+                </div>
+         
+                <div class="containers DST">
+                 <span>Offset DST:</span>
+                 <span id="resultDST"></span>
+                </div>
+         
+                <div class="containers DSTSeconds">
+                 <span>Offset DST Seconds:</span>
+                 <span id="resultDSTSeconds"></span>
+                </div>
+         
+                <div class="containers country">
+                 <span>Country:</span>
+                 <span id="resultCountry"></span>
+                </div>
+         
+                <div class="containers postcode">
+                 <span>Postcode:</span>
+                 <span id="resultPostCode"></span>
+                </div>
+         
+                <div class="containers city">
+                 <span>City:</span>
+                 <span id="resultCity"></span>
+                </div>
+         
+             </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
